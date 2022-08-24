@@ -30,24 +30,24 @@ function getTasks() {
     tasks.forEach(function(task) {
         //Create dom element
         //Create an li
-    const li = document.createElement('li');
-    //Add a class to li
-    li.className = 'collection-item';
+        const li = document.createElement('li');
+        //Add a class to li
+        li.className = 'collection-item';
 
-    li.appendChild(document.createTextNode(task));
-    //Create a link tag
-    const link = document.createElement('a');
-    //Add class
-    link.className = 'delete-item secondary-content';
-    //Create html for link
-    link.innerHTML = '<i class="fa fa-remove"></i>';
-    //Append link to li
-    li.appendChild(link)
+        li.appendChild(document.createTextNode(task));
+        //Create a link tag
+        const link = document.createElement('a');
+        //Add class
+        link.className = 'delete-item secondary-content';
+        //Create html for link
+        link.innerHTML = '<i class="fa fa-remove"></i>';
+        //Append link to li
+        li.appendChild(link)
 
-    //Append li to list
-    list.appendChild(li)
-    })
-}
+        //Append li to list
+        list.appendChild(li)
+        })
+    }
 
 //Add Tasks function
 function addTasks(e) {
